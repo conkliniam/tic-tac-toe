@@ -5,7 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tic Tac Toe</title>
     <link rel="stylesheet" href="styles.css" />
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <div class="header">
+      <h1>Tic Tac Toe</h1>
+    </div>
+    <div class="player-area">
+      <div class="player">
+        <h3>Player 1 Name:</h3>
+        <p id="player-1" class="player-name">Player One</p>
+        <button id="rename-1">Rename</button>
+        <dialog id="name-dialog-1">
+          <form method="dialog">
+            <label for="player-1-name">Name:</label
+            ><input
+              type="text"
+              id="player-1-name"
+              name="player-1-name"
+            /><button id="change-1">Change</button
+            ><button id="cancel-1" class="cancel" type="button">Cancel</button>
+          </form>
+        </dialog>
+      </div>
+      <div class="player">
+        <h3>Player 2 Name:</h3>
+        <p id="player-2" class="player-name">Player Two</p>
+        <button id="rename-2">Rename</button>
+        <dialog id="name-dialog-2">
+          <form method="dialog">
+            <label for="player-2-name">Name:</label
+            ><input
+              type="text"
+              id="player-2-name"
+              name="player-2-name"
+            /><button id="change-2">Change</button
+            ><button id="cancel-2" class="cancel" type="button">Cancel</button>
+          </form>
+        </dialog>
+      </div>
+    </div>
+    <div class="text-area">
+      <h2 class="display-text"></h2>
+      <button id="restart-button">Restart</button>
+    </div>
+    <div class="board">
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+    </div>
+  </body>
 </html>
